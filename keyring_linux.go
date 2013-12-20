@@ -4,14 +4,15 @@ package keyring
 
 import (
 	"fmt"
-	dbus "github.com/guelfey/go.dbus"
 	"os"
+
+	dbus "github.com/guelfey/go.dbus"
 )
 
 const (
 	ssServiceName     = "org.freedesktop.secrets"
 	ssServicePath     = "/org/freedesktop/secrets"
-	ssCollectionPath  = "/org/freedesktop/secrets/collection/Default"
+	ssCollectionPath  = "/org/freedesktop/secrets/aliases/default"
 	ssServiceIface    = "org.freedesktop.Secret.Service."
 	ssSessionIface    = "org.freedesktop.Secret.Session."
 	ssCollectionIface = "org.freedesktop.Secret.Collection."
